@@ -7,4 +7,23 @@ main {
 app-square {
     border: 1px gray solid;
     height: 200px;
+
 }
+@media only screen and (max-width: 600px) {
+
+    main{
+        margin-top: 50px;
+        grid-template-columns: 100px 100px 100px;
+    }
+    app-square {
+        
+        height: 100px;
+    
+    }
+
+  }
+  @media only screen and (max-width: 390px) {
+    h2{
+        font-size: 1.5rem;
+    }
+  }

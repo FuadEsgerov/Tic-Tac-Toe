@@ -9,7 +9,7 @@ export class BoardComponent implements OnInit {
 squares:any[];
 xIsNext:boolean;
 winner:string;
-
+movesCount: number = 0;
 
 
 constructor() { }
@@ -21,6 +21,7 @@ constructor() { }
     this.squares=Array(9).fill(null);
     this.winner=null;
     this.xIsNext=true
+    this.movesCount = 0;
   }
 
   get player() {
@@ -30,6 +31,7 @@ constructor() { }
   makeMove(idx: number) {
     if (!this.squares[idx]) {
       this.squares.splice(idx, 1, this.player);
+      this.movesCount++;
       this.xIsNext = !this.xIsNext;
     }
 
