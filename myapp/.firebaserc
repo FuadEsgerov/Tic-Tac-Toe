@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tic-tac-toe-e459f": {
+      "hosting": {
+        "myapp": [
+          "tic-tac-toe-e459f"
+        ]
+      }
+    }
+  }
+}
